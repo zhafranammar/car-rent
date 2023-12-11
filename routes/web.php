@@ -3,6 +3,7 @@
 use App\Http\Controllers\CarController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,6 +32,7 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('car', CarController::class);
     Route::resource('payment', PaymentController::class);
+    Route::resource('user', UserController::class);
 });
 
 require __DIR__ . '/auth.php';
