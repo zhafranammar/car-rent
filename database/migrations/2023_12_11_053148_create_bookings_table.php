@@ -17,7 +17,7 @@ return new class extends Migration
             $table->unsignedBigInteger('customer_id');
             $table->date('start_date');
             $table->date('end_date');
-            $table->decimal('amount');
+            $table->decimal('amount', 10, 2);
             $table->timestamps();
             $table->foreign('car_id')->references('id')->on('cars')->onDelete('cascade');
             $table->foreign('customer_id')->references('id')->on('users')->onDelete('cascade');

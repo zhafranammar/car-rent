@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\CarController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ProfileController;
@@ -32,6 +33,7 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('car', CarController::class);
     Route::resource('payment', PaymentController::class);
+    Route::resource('booking', BookingController::class);
     Route::resource('user', UserController::class);
 });
 

@@ -25,7 +25,6 @@ class Booking extends Model
     protected $fillable = [
         'car_id',
         'customer_id',
-        'status',
         'start_date',
         'end_date',
         'amount'
